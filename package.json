@@ -30,7 +30,7 @@
   },
   "bugs": "https://github.com/jsumners/adldap/issues",
   "dependencies": {
-    "abstract-logging": "^1.0.0",
+    "abstract-logging": "^2.0.1",
     "bluebird": "^3.5.0",
     "bluebird-co": "^2.1.2",
     "joi": "^17.0.0",
