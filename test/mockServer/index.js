@@ -224,7 +224,7 @@ module.exports = function (cb) {
   function initServer (cb) {
     require('./authentication')(server, settings)
     require('./search')(server, settings)
-    const socket = '/tmp/.adlap-' + uuid.v4()
+    const socket = (process.env.TEMP ? process.env.TEMP : '/tmp/')+'.adlap-' + uuid.v4()
 
     server.listen(socket, function () {
       log.trace('server running: %s', server.url)
